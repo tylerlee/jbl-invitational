@@ -10,12 +10,25 @@
   </head>
   <body>
     <div class='main'>
-      <h1>Thanks For Registering!</h1>
+      <h1>Thanks <span id='name'></span> For Registering!</h1>
       <p>We can't wait to see you on October 26th to support this amazing
         cause, thank you again, if you have any questions please contact us
         <a href='mailto:dannylee100@hotmail.com'>dannylee100@hotmail.com</a>
       </p>
 
     </div>
+
+    <script type="text/javascript">
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      $(document).ready(function(){
+        $('#name').html(getParameterByName('name'));
+      });
+    </script>
   </body>
 </html>
