@@ -67,7 +67,7 @@
           </tr>
           <tr>
             <td><label for='name'>Name</label></td>
-            <td><input type='text' name='name' /></td>
+            <td><input required type='text' name='name' /></td>
           </tr>
 
           <tr>
@@ -155,7 +155,7 @@
 
           <tr>
             <td><label for='email'>Email</label></td>
-            <td><input type='email' name='email' /></td>
+            <td><input required type='email' name='email' /></td>
           </tr>
           <tr>
             <td class='option-label'>
@@ -314,6 +314,10 @@
         }
 
         $(document).ready(function(){
+          resetHeight();
+        });
+
+        $(window).resize(function(){
           resetHeight();
         });
     </script>
