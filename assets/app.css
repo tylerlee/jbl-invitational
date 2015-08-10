@@ -234,3 +234,14 @@ button:hover{
 	background: white;
 	color: #18434c;
 }
+
+@media only screen and (max-width: 700px){
+	.left-side{
+		overflow: hidden;
+		padding: 10%;
+		width: 100%;
+	}
+	.right-side{
+		width: 100%;
+	}
+}
