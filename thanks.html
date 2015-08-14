@@ -117,6 +117,13 @@
       $(document).ready(function(){
         $('#name').html(getParameterByName('name'));
 
+        console.log('Tournament Sponsor: ' + getParameterByName('tournament_sponsor'));
+        console.log('Hole Sponsor: ' + getParameterByName('hole_sponsor'));
+        console.log('Hole In One Sponsor: ' + getParameterByName('hole_in_one_sponsor'));
+        console.log('Closest To Pin Sponsor: ' + getParameterByName('closest_to_pin_sponsor'));
+        console.log('Longest Drive Sponsor: ' + getParameterByName('longest_drive_sponsor'));
+        console.log('Player Type: ' + getParameterByName('player_type'));
+
         if(getParameterByName('tournament_sponsor') == 'sponsor_tournament') {
           $('#tournament').show();
         }
