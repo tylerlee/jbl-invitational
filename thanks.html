@@ -6,15 +6,38 @@
     <link rel="stylesheet" href="assets/normalize.css" />
     <link rel="stylesheet" href="assets/app.css" />
 
+    <script src="assets/js/paypal.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
     <div class='main'>
       <h1>Thanks <span id='name'></span> For Registering!</h1>
-      <p>We can't wait to see you on October 26th to support this amazing
-        cause, thank you again, if you have any questions please contact us
-        <a href='mailto:dannylee100@hotmail.com'>dannylee100@hotmail.com</a>
-      </p>
+
+      <span id="#individual" style='display:none;'>
+        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
+            data-button="buynow"
+            data-name="Jerry Bob Lee Classic Registration - Individual"
+            data-quantity="1"
+            data-amount="120"
+            data-currency="USD"
+            data-shipping="0"
+            data-tax="0"
+            data-callback="http://www.jerrybobleeclassic.com/thanksagain"
+        ></script>
+      </span>
+
+      <span id="#foursome" style='display:none;'>
+        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
+            data-button="buynow"
+            data-name="Jerry Bob Lee Classic Registration - Foursome"
+            data-quantity="1"
+            data-amount="400"
+            data-currency="USD"
+            data-shipping="0"
+            data-tax="0"
+            data-callback="http://www.jerrybobleeclassic.com/thanksagain"
+        ></script>
+      </span>
 
     </div>
 
@@ -28,6 +51,12 @@
 
       $(document).ready(function(){
         $('#name').html(getParameterByName('name'));
+        console.log('Tournament Sponsor: ' + getParameterByName('tournament_sponsor');
+        console.log('Hole Sponsor: ' + getParameterByName('hole_sponsor');
+        console.log('Hole In One Sponsor: ' + getParameterByName('hole_in_one_sponsor');
+        console.log('Closest To Pin Sponsor: ' + getParameterByName('closest_to_pin_sponsor');
+        console.log('Longest Drive Sponsor: ' + getParameterByName('longest_drive_sponsor');
+        console.log('Player Type: ' + getParameterByName('player_type');
       });
     </script>
   </body>
