@@ -23,6 +23,7 @@
       </span>
 
       <span id="individual" style='display:none;'>
+        <p>Individual Registration</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="PP2V5LVMN4RE8">
@@ -32,6 +33,7 @@
       </span>
 
       <span id="foursome" style='display:none;'>
+        <p>Foursome Registration</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="7S88FV83PQE6J">
@@ -41,6 +43,7 @@
       </span>
 
       <span id="longest_drive" style='display:none;'>
+        <p>Longest Drive Sponsorship</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="P7UZLGETEEFYY">
@@ -50,6 +53,7 @@
       </span>
 
       <span id="closest_to_pin" style='display:none;'>
+        <p>Closest To Pin Sponsorship</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="H36HAQSN5FXZN">
@@ -59,6 +63,7 @@
       </span>
 
       <span id="hole_in_one" style='display:none;'>
+        <p>Hole In One Sponsorship</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="23HQ287JU7KM2">
@@ -68,6 +73,7 @@
       </span>
 
       <span id="hole" style='display:none;'>
+        <p>Hole Sponsorship</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="5AFK35VGN9SP2">
@@ -77,9 +83,20 @@
       </span>
 
       <span id="tournament" style='display:none;'>
+        <p>Tournament Sponsorship</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="U9GZQKLDFKTN2">
+          <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </span>
+
+      <span id="general" style='display:none;'>
+        <p>General Donation</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="MNLQVSQ6LYF2W">
           <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
@@ -96,13 +113,6 @@
 
       $(document).ready(function(){
         $('#name').html(getParameterByName('name'));
-
-        console.log('Tournament Sponsor: ' + getParameterByName('tournament_sponsor'));
-        console.log('Hole Sponsor: ' + getParameterByName('hole_sponsor'));
-        console.log('Hole In One Sponsor: ' + getParameterByName('hole_in_one_sponsor'));
-        console.log('Closest To Pin Sponsor: ' + getParameterByName('closest_to_pin_sponsor'));
-        console.log('Longest Drive Sponsor: ' + getParameterByName('longest_drive_sponsor'));
-        console.log('Player Type: ' + getParameterByName('player_type'));
 
         if(getParameterByName('tournament_sponsor') == 'sponsor_tournament') {
           $('#tournament').show();
@@ -124,6 +134,9 @@
         }
         if(getParameterByName('player_type') == 'individual') {
           $('#individual').show();
+        }
+        if(getParameterByName('general_donation_sponsor') == 'sponsor_general_donation') {
+          $('#general').show();
         }
       });
     </script>
