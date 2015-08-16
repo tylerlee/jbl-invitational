@@ -204,7 +204,13 @@ label .cost{
 	font-size: 15px;
 	margin-top: 20px;
 }
-.player{
+
+.indy-details{
+	margin-left: 20px;
+	color: #777;
+	font-size: 14px;
+}
+.player, .foursome-info{
 	display: none;
 	margin-top: 20px;
 }

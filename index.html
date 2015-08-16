@@ -163,16 +163,32 @@
           </tr>
           <tr>
             <td class='option-label'>
-              <label>Participation Options</label>
-              <div class='callout'>* All registrations and sponsorships
+              <label>Registration Options</label>
+              <div class='callout'>* All registrations 
                 are tax deductible</div>
             </td>
             <td>
               <div class='options'>
                 <label>
-                  <input type='checkbox' name='player_type' id='playAsFoursome' value='foursome' />
-                  Play as a foursome <span class='cost'>$400</span>
+                  <input type='checkbox' name='player_type' id="playAsIndividual" value='individual' />
+                  Register as an individual <span class='cost'>$120</span><br>
+                  <div class='indy-details'>(must be part of a foursome)</div>
                 </label>
+                <label>
+                  <input type='checkbox' name='player_type' id='playAsFoursome' value='foursome' />
+                  Register and Pay for a foursome <span class='cost'>$480</span>
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class='option-label'>
+              <label>Sponsorship Options</label>
+              <div class='callout'>* All sponsorships
+                are tax deductible</div>
+            </td>
+            <td>
+              <div class='options'>
                 <label>
                   <input type='checkbox' name='tournament_sponsor' id='tournamentSponsor' value='sponsor_tournament' />
                   Tournament Sponsor (incl. foursome) <span class='cost'>$1200</span>
@@ -198,6 +214,13 @@
           </tr>
         </table>
 
+        <table class='form-content foursome-info'>
+          <tr>
+            <td><label for='foursome_name'>Foursome Name</label></td>
+            <td><input type='text' name='foursome_name' /></td>
+          </tr>
+        </table>
+
         <table class='form-content player'>
           <tr>
             <td></td><td><h3>Golfer Details</h3></td>
@@ -211,8 +234,8 @@
             <td><input type='text' name='player1_organization' /></td>
           </tr>
           <tr>
-            <td><label for='player1_handicap'>Handicap</label></td>
-            <td><input type='text' name='player1_handicap' /></td>
+            <td><label for='player1_email'>Email</label></td>
+            <td><input type='text' name='player1_email' /></td>
           </tr>
         </table>
 
@@ -229,8 +252,8 @@
             <td><input type='text' name='player2_organization' /></td>
           </tr>
           <tr>
-            <td><label for='player2_handicap'>Handicap</label></td>
-            <td><input type='text' name='player2_handicap' /></td>
+            <td><label for='player2_email'>Email</label></td>
+            <td><input type='text' name='player2_email' /></td>
           </tr>
         </table>
 
@@ -247,8 +270,8 @@
             <td><input type='text' name='player3_organization' /></td>
           </tr>
           <tr>
-            <td><label for='player3_handicap'>Handicap</label></td>
-            <td><input type='text' name='player3_handicap' /></td>
+            <td><label for='player3_email'>Email</label></td>
+            <td><input type='text' name='player3_email' /></td>
           </tr>
         </table>
 
@@ -265,8 +288,8 @@
             <td><input type='text' name='player4_organization' /></td>
           </tr>
           <tr>
-            <td><label for='player4_handicap'>Handicap</label></td>
-            <td><input type='text' name='player4_handicap' /></td>
+            <td><label for='player4_email'>Email</label></td>
+            <td><input type='text' name='player4_email' /></td>
           </tr>
         </table>
 
@@ -293,9 +316,10 @@
         $('#playAsIndividual').change(function() {
           if (this.checked) {
             $('.player').hide();
-            $('.player').first().show();
+            $('.foursome-info').show();
           } else {
             $('.player').hide();
+            $('.foursome-info').hide();
             $('.player input').val("");
           }
           moveInfo();
