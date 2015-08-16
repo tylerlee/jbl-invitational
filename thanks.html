@@ -13,19 +13,6 @@
     <div class='main'>
       <h1>Thanks <span id='name'></span> For Registering!</h1>
 
-      <span id="individual" style='display:none;'>
-        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
-            data-button="buynow"
-            data-name="Jerry Bob Lee Classic Registration - Individual"
-            data-quantity="1"
-            data-amount="120"
-            data-currency="USD"
-            data-shipping="0"
-            data-tax="0"
-            data-callback="http://www.jerrybobleeclassic.com/thanksagain"
-        ></script>
-      </span>
-
       <span id="foursome" style='display:none;'>
         <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
             data-button="buynow"
@@ -141,9 +128,6 @@
         }
         if(getParameterByName('player_type') == 'foursome') {
           $('#foursome').show();
-        }
-        if(getParameterByName('player_type') == 'individual') {
-          $('#individual').show();
         }
       });
     </script>
