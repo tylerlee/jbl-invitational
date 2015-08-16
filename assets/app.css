@@ -60,8 +60,7 @@ a:hover{
 	padding: 50px 100px;
 }
 .main h1{
-	font-size: 40px;
-	text-align: center;
+	font-size: 30px;
 }
 .main a{
 	color: white;
@@ -250,4 +249,20 @@ button:hover{
 	.right-side{
 		width: 100%;
 	}
+	.main{
+		padding: 10%;
+	}
+	.main input{
+		padding: 0;
+	}
+}
+
+
+input[type="image"]{
+	background: none !important;
+	border: 0 !important;
+	max-width: 100% !important;
+}
+input[type="image"]:hover{
+	opacity: .9 !important;
 }

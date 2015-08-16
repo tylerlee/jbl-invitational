@@ -9,115 +9,81 @@
     <script src="assets/js/paypal.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <style>
-      input[type="button"]:hover{
-        opacity: .8;
-      }
-    </style>
   </head>
   <body>
     <div class='main'>
-      <h1>Thanks <span id='name'></span>!</h1>
+      <h1>Almost done <span id='name'></span>,</h1>
       <p>
-        Your registration form has been submitted but please submit payment via below.
+        Your registration form has been submitted but now we need to handle payment. Payment
+        will be processed with PayPal (which does not require registration and accepts all major credit cards).
       </p>
 
-      <p>If you need to submit your payment in another format please <a href="">email us</a></p>
+      <p>However, if you need to submit your payment in another format please <a href="dannylee100@hotmail.com">email us</a></p>
 
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="X95F524Y7PH4J">
-        <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="border: 0; background: none;">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
-
-      <!-- <span id="foursome" style='display:none;'>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="7S88FV83PQE6J">
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>-->
       </span>
 
       <span id="individual" style='display:none;'>
-        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
-        data-button="buynow"
-        data-name="Jerry Bob Lee Classic Registration - Individual"
-        data-quantity="1"
-        data-amount="120"
-        data-currency="USD"
-        data-shipping="0"
-        data-tax="0"
-        data-callback="http://www.jerrybobleeclassic.com/thanksagain"
-        ></script>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="PP2V5LVMN4RE8">
+          <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </span>
+
+      <span id="foursome" style='display:none;'>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="7S88FV83PQE6J">
+          <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </span>
 
       <span id="longest_drive" style='display:none;'>
-        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
-            data-button="buynow"
-            data-name="Jerry Bob Lee Classic Sponsor - Longest Drive"
-            data-quantity="1"
-            data-amount="200"
-            data-currency="USD"
-            data-shipping="0"
-            data-tax="0"
-            data-callback="http://www.jerrybobleeclassic.com/thanksagain"
-        ></script>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="P7UZLGETEEFYY">
+          <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </span>
 
       <span id="closest_to_pin" style='display:none;'>
-        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
-            data-button="buynow"
-            data-name="Jerry Bob Lee Classic Sponsor - Closest To Pin"
-            data-quantity="1"
-            data-amount="100"
-            data-currency="USD"
-            data-shipping="0"
-            data-tax="0"
-            data-callback="http://www.jerrybobleeclassic.com/thanksagain"
-        ></script>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="H36HAQSN5FXZN">
+          <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </span>
 
       <span id="hole_in_one" style='display:none;'>
-        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
-            data-button="buynow"
-            data-name="Jerry Bob Lee Classic Sponsor - Hole In One"
-            data-quantity="1"
-            data-amount="300"
-            data-currency="USD"
-            data-shipping="0"
-            data-tax="0"
-            data-callback="http://www.jerrybobleeclassic.com/thanksagain"
-        ></script>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="23HQ287JU7KM2">
+          <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </span>
 
       <span id="hole" style='display:none;'>
-        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
-            data-button="buynow"
-            data-name="Jerry Bob Lee Classic Sponsor - A Hole"
-            data-quantity="1"
-            data-amount="500"
-            data-currency="USD"
-            data-shipping="0"
-            data-tax="0"
-            data-callback="http://www.jerrybobleeclassic.com/thanksagain"
-        ></script>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="5AFK35VGN9SP2">
+          <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </span>
 
       <span id="tournament" style='display:none;'>
-        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=N34GD9K4DWZDS"
-            data-button="buynow"
-            data-name="Jerry Bob Lee Classic Sponsor - Tournament"
-            data-quantity="1"
-            data-amount="1200"
-            data-currency="USD"
-            data-shipping="0"
-            data-tax="0"
-            data-callback="http://www.jerrybobleeclassic.com/thanksagain"
-        ></script>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="U9GZQKLDFKTN2">
+          <input type="image" src="assets/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </span>
-
     </div>
 
     <script type="text/javascript">
