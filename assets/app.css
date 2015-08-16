@@ -13,15 +13,16 @@ body{
 }
 
 body{
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#417970+0,18434c+100 */
-	background: #417970; /* Old browsers */
-	background: -moz-linear-gradient(-25deg, #417970 0%, #18434c 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#417970), color-stop(100%,#18434c)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-25deg, #417970 0%,#18434c 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-25deg, #417970 0%,#18434c 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-25deg, #417970 0%,#18434c 100%); /* IE10+ */
-	background: linear-gradient(155deg, #417970 0%,#18434c 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#417970', endColorstr='#18434c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#208c66+0,18434c+100 */
+	background: #208c66; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #208c66 0%, #18434c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#208c66), color-stop(100%,#18434c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #208c66 0%,#18434c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #208c66 0%,#18434c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #208c66 0%,#18434c 100%); /* IE10+ */
+	background: linear-gradient(135deg, #208c66 0%,#18434c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#208c66', endColorstr='#18434c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	-webkit-font-smoothing: antialiased;
 }
 
 a{
@@ -52,15 +53,25 @@ a:hover{
 	width: 150px;
 }
 
+.box{
+	box-shadow: 0px 0px 30px rgba(255,255,255,0.3);
+	margin: 0 auto;
+	max-width: 800px;
+}
 .main{
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.4);
+	border: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 0;
 	color: white;
-	margin: 100px auto;
+	margin: 100px auto 0 auto;
 	max-width: 800px;
 	padding: 50px 100px;
 }
 .main h1{
 	font-size: 30px;
+}
+.main h3{
+	color: white;
 }
 .main a{
 	color: white;
@@ -91,7 +102,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-	font-size: 14px;
+	font-size: 18px;
 	margin-bottom: 3rem;
 }
 
@@ -257,6 +268,32 @@ button:hover{
 	}
 }
 
+.footer{
+	background: rgba(0,0,0,0.2);
+	border: 1px solid rgba(255,255,255,0.3);
+	border-top: 1px solid rgba(0,0,0,0.5);
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 20px;
+	text-align: center;
+}
+.footer p{
+	margin: 0;
+}
+
+.footer a{
+	color: white;
+	border: 0;
+	text-decoration: none;
+	opacity: .5;
+}
+.footer a:hover{
+	border-bottom: 1px solid white;
+}
+
+.contact-us{
+	font-size: 16px;
+}
 
 input[type="image"]{
 	background: none !important;
