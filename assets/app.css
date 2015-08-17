@@ -144,11 +144,20 @@ p{
 }
 
 p.reg-details{
-	color: #888;
+	color: #333;
 	font-size: 14px;
 	text-align: left;
 }
 
+.reg-details a{
+	border-bottom: 1px dotted #208c66;
+	color: #208c66;
+}
+
+.reg-details a:hover{
+	border-bottom: 1px solid #208c66;
+	opacity: .8;
+}
 label{
 	color: #777;
 	font-size: 17px;
@@ -303,4 +312,59 @@ input[type="image"]{
 }
 input[type="image"]:hover{
 	opacity: .9 !important;
+}
+
+.floater{
+	border: 1px solid #f4f4f4;
+}
+
+.why {
+	position: relative;
+}
+
+@media only screen and (max-width: 800px){
+	.why img{
+		display: none;
+	}
+	.why-left{
+		width: 40%;
+	}
+	.why-right{
+		width: 50%;
+	}
+}
+.why img{
+	margin-bottom: 20px;
+	max-width: 100%;
+	left: 0;
+}
+
+.why img.one{
+	position: relative;
+	left: -70px;
+	width: 220px;
+	max-width: 150%;
+}
+
+.why img.two{
+	position: relative;
+	top: 20px;
+}
+
+.why img.three{
+	position: relative;
+	top: 20px;
+}
+
+.why-left{
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+	margin-right: 5%;
+}
+
+.why-right{
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
 }
