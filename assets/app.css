@@ -149,6 +149,11 @@ p.reg-details{
 	text-align: left;
 }
 
+.reg-details a{
+	border-bottom: 1px dotted #888;
+	color: #888;
+}
+
 label{
 	color: #777;
 	font-size: 17px;
