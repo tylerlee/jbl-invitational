@@ -188,11 +188,11 @@
             <td>
               <div class='options'>
                 <label>
-                  <input type='checkbox' name='player_type' id="playAsIndividual" value='individual' />
+                  <input type='radio' name='player_type' id="playAsIndividual" value='individual' />
                   Register as an individual <span class='cost'>$120</span><br>
                 </label>
                 <label>
-                  <input type='checkbox' name='player_type' id='playAsFoursome' value='foursome' />
+                  <input type='radio' name='player_type' id='playAsFoursome' value='foursome' />
                   Register and Pay for a foursome <span class='cost'>$480</span>
                 </label>
               </div>
@@ -311,6 +311,7 @@
         $('#playAsFoursome, #tournamentSponsor').change(function() {
           if (this.checked) {
             $('.player').show();
+            $('.foursome-info').hide();
           } else {
             $('.player').hide();
             $('.player input').val("");
