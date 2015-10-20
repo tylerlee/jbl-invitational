@@ -310,10 +310,10 @@ input[type="image"]:hover{
 	opacity: .9 !important;
 }
 
-.wat--logo{
+.wat-logo{
   border: 0;
 }
-.wat--logo img{
+.wat-logo img{
   margin-right: 5px;
-  width: 30%;
+  width: 45%;
 }
